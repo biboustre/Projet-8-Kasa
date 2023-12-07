@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.banniere2{
+    padding: 0 100px;
+}
+
+
+.banniere2_img{
+    background-image: url('images/IMG-banniere-2.jpg');
+    height: 223px;
+    border-radius: 25px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+}
+
+main > div{
+    display: flex;
+    align-items: center;
+    height: 52px;
+    width: 1023px;
+    border-radius: 5px;
+    background: rgba(255, 96, 96, 1);
+}
+
+.categories{
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 1);
+
+}

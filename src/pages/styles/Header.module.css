@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+  }
+  
+  nav{
+    display: flex;
+    gap: 57px;
+    align-items: center;
+  }
+  
+  
+  .liens_globale{
+    text-decoration: none;
+    color: red;
+  }
+  
+  .liens_globale:hover{
+    text-decoration: underline;
+  }
+
+
+  @media screen and (max-width: 944px) {
+    header{
+      padding: 30px;
+    }
+}

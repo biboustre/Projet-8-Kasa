@@ -1,0 +1,22 @@
+h1{
+    font-size: 288px;
+    color: rgba(255, 96, 96, 1);
+}
+
+
+.textError{
+    color: rgba(255, 96, 96, 1);
+}
+
+.leMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leBody{
+    height: 100vh;
+}
+
+
