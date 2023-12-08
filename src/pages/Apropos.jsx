@@ -1,54 +1,69 @@
-// import { Link } from "react-router-dom";
-import { useState } from "react";
-import Footer from "../pages/Footer.jsx";
-import Header from "../pages/Header.jsx";
+// import { Outlet } from "react-router-dom";
+// import Footer from "../pages/Footer.jsx";
+// import Header from "../pages/Header.jsx";
 import styles from "./styles/Apropos.module.css";
-
-
-
-// const [categories, setCategories] = useState([
-//     { id:1, nom: "Fiabilité" },
-//     { id:2, nom: "Reaspect" },
-//     { id:3, nom: "Service" },
-//     { id:4, nom: "Sécurité" }
-// ]) ;
-
-
 
 
 function Apropos() {
     return (
-        <>
-            <Header />
+        <div className={styles.container} >
+            {/* <Header /> */}
 
             <section className={styles.banniere2}>
                 <div className={styles.banniere2_img} ></div>
             </section>
 
+
             <main>
-                {/* <div>
-                    {categories.map((categorie) => {
-                    return <p key={categorie.id}>{categorie.nom}</p>
-                })}
-                </div> */}
-
-
                 <div>
-                    <p className={styles.categories}>Fiabilité</p>
+                    <div className={styles.divCategories}>
+                        <p className={styles.categories}>Fiabilité</p>
+                    <button>
+                        <img src="images/arrow.png" alt="Flêche qui ouvre la déscription" />
+                    </button>
+                    </div>
+                    <aside className={styles.textHidden} >
+                        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
+                    </aside>
                 </div>
                 <div>
-                    <p className={styles.categories}>Reaspect</p>
+                    <div className={styles.divCategories}>
+                        <p className={styles.categories}>Respect</p>
+                        <button>
+                            <img src="images/arrow.png" alt="Flêche pour ouvrire " />
+                        </button>
+                    </div>
+                    <aside className={styles.textHidden} >
+                        <p>La bienvéllence fait partie des valeurs fondatrices de Kasa. Toutes pertubation du voisinage entraînera une exclusion de notre plateforme.</p>
+                    </aside>
                 </div>
                 <div>
-                    <p className={styles.categories}>Service</p>
+                    <div className={styles.divCategories}>
+                        <p className={styles.categories}>Service</p>
+                        <button>
+                            <img src="images/arrow.png" alt="Flêche pour ouvrire " />
+                        </button>
+                    </div>
+                    <aside className={styles.textHidden} >
+                        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
+                    </aside>
                 </div>
                 <div>
-                    <p className={styles.categories}>Sécurité</p>
+                    <div className={styles.divCategories}>
+                        <p className={styles.categories}>Sécurité</p>
+                        <button>
+                            <img src="images/arrow.png" alt="Flêche pour ouvrire " />
+                        </button>
+                    </div>
+                    
+                    <aside className={styles.textHidden} >
+                        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
+                    </aside>
                 </div>
             </main>
 
-            <Footer />
-        </>
+            {/* <Footer /> */}
+        </div>
     )
 }
 
