@@ -5,7 +5,7 @@ import Footer from "../pages/Footer.jsx";
 
 function Accueil() {
   return (
-    <>
+    <div className={styles.container} >
       <Header />
 
       <section className={styles.banniere}>
@@ -52,7 +52,7 @@ function Accueil() {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

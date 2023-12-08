@@ -7,17 +7,26 @@
   }
 
 
+
+  .container{
+    max-width: 1440px;
+    margin: auto;
+  }
+
+
 /* **** Banniere *****/
 .banniere{
     position: relative;
     padding: 0 100px;
     margin-bottom: 40px;
+    /* max-width: 1240px; */
   }
   
   .banniere_img{
     height: 223px;
     background-image: url("images/IMG.jpg");
     border-radius: 25px;
+    /* max-width: 1240px; */
   }
   
   .title_banniere{
