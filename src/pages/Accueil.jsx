@@ -21,8 +21,8 @@ function Accueil() {
       <main className={styles.mainAccueil}>
         <section className={styles.gallery}>
           <div className={styles.location}>
-            <Link to="/locations1">
-              <img src="" alt="" />
+            <Link to="/locations">
+              <img src="images/IMG-banniere-2.jpg" alt="" />
             </Link>
           </div>
           <div className={styles.location}>

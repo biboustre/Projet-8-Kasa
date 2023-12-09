@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+.banniere{
+    width: 86%;
+    height: 415px;
+    background-color: darkslategrey;
+    margin: auto;
+}

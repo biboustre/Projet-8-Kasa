@@ -1,6 +1,6 @@
 import Footer from "../pages/Footer.jsx";
-import styles from "./styles/Error.module.css";
 import Header from "../pages/Header.jsx";
+import styles from "./styles/Error.module.css";
 import { Link } from "react-router-dom";
 
 function PageError() {

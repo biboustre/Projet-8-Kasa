@@ -1,9 +1,10 @@
-import Accueil from "../pages/Accueil.jsx";
+import Accueil from "./Accueil.jsx";
 import Header from "./Header.jsx";
 import Apropos from "../pages/Apropos.jsx";
 import PageError from "../pages/Error.jsx";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Location from "./locations/Locations.jsx";
 import Footer from "./Footer.jsx";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -18,14 +19,33 @@ const router = createBrowserRouter([
         {
          path: "A Propos",
          element: <Apropos />,
-        }
+        },
+        {
+         path: "Locations",
+         element: <Root2 />,
+        },
+        {
+         path: "locations2",
+         element: <Root2 />,
+        },
+        {
+         path: "locations3",
+         element: <Root2 />,
+        },
+        {
+         path: "locations4",
+         element: <Root2 />,
+        },
+        {
+         path: "locations5",
+         element: <Root2 />,
+        },
+        {
+         path: "locations6",
+         element: <Root2 />,
+        },
         // {
-        //  path: "Location1",
-        //  element: <h1>CACAO</h1>,
-        // },
-        // {
-        //   path: "Location2",
-        //   element: <h1>CACAO</h1>,
+        //  
         // },
         // {
         //   path: "Location3",
@@ -56,6 +76,14 @@ function Root () {
             <Footer />
         </>
     )
+}
+
+function Root2 () {
+  return (
+    <>
+       <Location />
+    </>
+  )
 }
 
 

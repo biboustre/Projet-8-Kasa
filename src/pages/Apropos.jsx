@@ -1,10 +1,20 @@
 // import { Outlet } from "react-router-dom";
 // import Footer from "../pages/Footer.jsx";
 // import Header from "../pages/Header.jsx";
+import { useState } from "react";
+// import { useRef } from "react";
 import styles from "./styles/Apropos.module.css";
 
 
 function Apropos() {
+    const [open, setOpen] = useState(false)
+
+    const handlClick = () => {
+       setOpen(!open)
+    }
+ 
+
+
     return (
         <div className={styles.container} >
             {/* <Header /> */}
@@ -18,47 +28,48 @@ function Apropos() {
                 <div>
                     <div className={styles.divCategories}>
                         <p className={styles.categories}>Fiabilité</p>
-                    <button>
+                    <button onClick={handlClick}>
                         <img src="images/arrow.png" alt="Flêche qui ouvre la déscription" />
                     </button>
                     </div>
-                    <aside className={styles.textHidden} >
+                    {open && (<aside   className={styles.textHidden}>
                         <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
-                    </aside>
+                    </aside>)}
+                    
                 </div>
                 <div>
                     <div className={styles.divCategories}>
                         <p className={styles.categories}>Respect</p>
-                        <button>
+                        <button onClick={handlClick}>
                             <img src="images/arrow.png" alt="Flêche pour ouvrire " />
                         </button>
                     </div>
-                    <aside className={styles.textHidden} >
+                    {open && (<aside   className={styles.textHidden} >
                         <p>La bienvéllence fait partie des valeurs fondatrices de Kasa. Toutes pertubation du voisinage entraînera une exclusion de notre plateforme.</p>
-                    </aside>
+                    </aside>)}
                 </div>
                 <div>
                     <div className={styles.divCategories}>
                         <p className={styles.categories}>Service</p>
-                        <button>
+                        <button onClick={handlClick}>
                             <img src="images/arrow.png" alt="Flêche pour ouvrire " />
                         </button>
                     </div>
-                    <aside className={styles.textHidden} >
+                    {open && (<aside   className={styles.textHidden} >
                         <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
-                    </aside>
+                    </aside>)}
                 </div>
                 <div>
                     <div className={styles.divCategories}>
                         <p className={styles.categories}>Sécurité</p>
-                        <button>
+                        <button onClick={handlClick}>
                             <img src="images/arrow.png" alt="Flêche pour ouvrire " />
                         </button>
                     </div>
                     
-                    <aside className={styles.textHidden} >
+                    {open && (<aside>
                         <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
-                    </aside>
+                    </aside>)}
                 </div>
             </main>
 

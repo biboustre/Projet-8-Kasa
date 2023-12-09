@@ -7,7 +7,6 @@
 .container{
     max-width: 1440px;
     margin: auto;
-    background-color: darkslategray;
 
 }
 
@@ -36,8 +35,7 @@ main > div{
     align-items: center;
     /* gap: 30px; */
     margin-top: 30px;
-    /* background-color: white; */
-    background-color: darkslategray;
+    background-color: white;
 
 }
 
@@ -77,6 +75,6 @@ aside > p{
 }
 
 
-.textHidden{
-    /* display: none; */
-}
+/* .textHidden{
+    display: none;
+} */
