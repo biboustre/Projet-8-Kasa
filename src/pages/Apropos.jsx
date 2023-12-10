@@ -2,7 +2,6 @@
 // import Footer from "../pages/Footer.jsx";
 // import Header from "../pages/Header.jsx";
 import { useState } from "react";
-// import { useRef } from "react";
 import styles from "./styles/Apropos.module.css";
 
 
@@ -17,10 +16,9 @@ function Apropos() {
 
     return (
         <div className={styles.container} >
-            {/* <Header /> */}
-
             <section className={styles.banniere2}>
                 <div className={styles.banniere2_img} ></div>
+                <div className={styles.banniere22_img} ></div>
             </section>
 
 
@@ -28,9 +26,9 @@ function Apropos() {
                 <div>
                     <div className={styles.divCategories}>
                         <p className={styles.categories}>Fiabilité</p>
-                    <button onClick={handlClick}>
-                        <img src="images/arrow.png" alt="Flêche qui ouvre la déscription" />
-                    </button>
+                        <button onClick={handlClick}>
+                            <img src="images/arrow.png" alt="Flêche qui ouvre la déscription" />
+                        </button>
                     </div>
                     {open && (<aside   className={styles.textHidden}>
                         <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
@@ -72,8 +70,6 @@ function Apropos() {
                     </aside>)}
                 </div>
             </main>
-
-            {/* <Footer /> */}
         </div>
     )
 }

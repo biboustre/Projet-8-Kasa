@@ -7,10 +7,6 @@
 .container{
     max-width: 1440px;
     margin: auto;
-
-}
-
-.banniere2{
     padding: 0 100px;
 }
 
@@ -21,10 +17,16 @@
     border-radius: 25px;
 }
 
-
-/* main{
-    margin-top: 40px;
-} */
+.banniere22_img{
+    display: none;
+    background-image: url('images/banniere_Apropos_mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 111px;
+    width: 335px;
+    margin: auto;
+    border-radius: 25px;
+}
 
 
 
@@ -75,6 +77,31 @@ aside > p{
 }
 
 
-/* .textHidden{
-    display: none;
-} */
+
+
+/* Media QUERIES RESPONSIVE */
+@media screen and (max-width: 944px) {
+    .container{
+        padding: 0 30px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 550px ) {
+    .divCategories{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px ) {
+   .banniere2_img{
+        display: none;
+   }
+
+   .banniere22_img{
+        display: block;
+   }
+   
+}

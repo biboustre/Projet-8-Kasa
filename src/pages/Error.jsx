@@ -1,5 +1,5 @@
-import Footer from "../pages/Footer.jsx";
-import Header from "../pages/Header.jsx";
+import Footer from "./Footer.jsx";
+import Header from "./Header.jsx";
 import styles from "./styles/Error.module.css";
 import { Link } from "react-router-dom";
 

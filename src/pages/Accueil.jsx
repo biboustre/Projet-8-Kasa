@@ -8,8 +8,6 @@ import styles from "./styles/Accueil.module.css";
 function Accueil() {
   return (
     <div className={styles.container} >
-      {/* <Header /> */}
-
       <section className={styles.banniere}>
         <div className={styles.banniere_img}>
           <div className={styles.title_banniere}>
@@ -22,7 +20,7 @@ function Accueil() {
         <section className={styles.gallery}>
           <div className={styles.location}>
             <Link to="/locations">
-              <img src="images/IMG-banniere-2.jpg" alt="" />
+              <img src="" alt="" />
             </Link>
           </div>
           <div className={styles.location}>
@@ -52,8 +50,6 @@ function Accueil() {
           </div>
         </section>
       </main>
-
-      {/* <Footer /> */}
     </div>
   );
 }
