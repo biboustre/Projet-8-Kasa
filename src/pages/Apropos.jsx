@@ -24,7 +24,7 @@ function Apropos() {
 
             <main>
                 <div>
-                    <div className={styles.divCategories}>
+                    <div className={styles.rideauDeroulant}>
                         <p className={styles.categories}>Fiabilité</p>
                         <button onClick={handlClick}>
                             <img src="images/arrow.png" alt="Flêche qui ouvre la déscription" />
@@ -36,7 +36,7 @@ function Apropos() {
                     
                 </div>
                 <div>
-                    <div className={styles.divCategories}>
+                    <div className={styles.rideauDeroulant}>
                         <p className={styles.categories}>Respect</p>
                         <button onClick={handlClick}>
                             <img src="images/arrow.png" alt="Flêche pour ouvrire " />
@@ -47,7 +47,7 @@ function Apropos() {
                     </aside>)}
                 </div>
                 <div>
-                    <div className={styles.divCategories}>
+                    <div className={styles.rideauDeroulant}>
                         <p className={styles.categories}>Service</p>
                         <button onClick={handlClick}>
                             <img src="images/arrow.png" alt="Flêche pour ouvrire " />
@@ -58,7 +58,7 @@ function Apropos() {
                     </aside>)}
                 </div>
                 <div>
-                    <div className={styles.divCategories}>
+                    <div className={styles.rideauDeroulant}>
                         <p className={styles.categories}>Sécurité</p>
                         <button onClick={handlClick}>
                             <img src="images/arrow.png" alt="Flêche pour ouvrire " />
