@@ -15,10 +15,20 @@ header{
   
   .liens_globale{
     text-decoration: none;
-    color: red;
+    color: rgba(255, 96, 96, 1);
   }
   
   .liens_globale:hover{
+    text-decoration: underline;
+  }
+
+  .liensHidden{
+    display: none;
+    text-decoration: none;
+    color: rgba(255, 96, 96, 1);
+  }
+
+  .liensHidden:hover  {
     text-decoration: underline;
   }
 
@@ -26,5 +36,24 @@ header{
   @media screen and (max-width: 944px) {
     header{
       padding: 30px;
+    }
+}
+  @media screen and (max-width: 630px) {
+    .liensHidden{
+      display: block;
+    }
+
+    .liens_globale{
+      display: none;
+    }
+
+    nav{
+      gap: 26px;
+      font-size: 12px;
+    }
+
+    header img{
+      width: 145px;
+      height: 46.88px;
     }
 }

@@ -26,6 +26,7 @@
   .banniere_img{
     height: 223px;
     background-image: url("images/IMG.jpg");
+    background-position: center;
     border-radius: 25px;
     /* max-width: 1240px; */
   }
@@ -96,11 +97,15 @@
     }
     
     .banniere_img{
+      background-size: cover;
+      background-position: center;
       height: 111px;
+      border-radius: 10px;
     }
   
     .title_banniere{
       height: 111px;
+      border-radius: 10px;
     }
   
     main{

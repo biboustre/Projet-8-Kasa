@@ -13,20 +13,12 @@
 
 .banniere2_img{
     background-image: url('images/IMG-banniere-2.jpg');
+    background-position: center;
     height: 223px;
     border-radius: 25px;
 }
 
-.banniere22_img{
-    display: none;
-    background-image: url('images/banniere_Apropos_mobile.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 111px;
-    width: 335px;
-    margin: auto;
-    border-radius: 25px;
-}
+
 
 
 
@@ -93,15 +85,20 @@ aside > p{
     .divCategories{
         width: 100%;
     }
+
+    .banniere2_img{
+        background-size: cover;
+        background-position: center;
+        height: 111px;
+        border-radius: 10px;
+     }
+
+     main{
+        padding-top: 0;
+     }
+
+     .divCategories{
+        height: 30px;
+       }
 }
 
-@media screen and (max-width: 650px ) {
-   .banniere2_img{
-        display: none;
-   }
-
-   .banniere22_img{
-        display: block;
-   }
-   
-}
