@@ -1,12 +1,12 @@
-import Footer from "./Footer.jsx";
-import Header from "./Header.jsx";
-import styles from "./styles/Error.module.css";
+import styles from "../assets/styles/Error.module.css";
+import Template from "../components/Templates/PageTemplate";
 import { Link } from "react-router-dom";
 
 function PageError() {
   return (
-    <div className={styles.leBody}>
-      <Header />
+    <Template>
+      <div className={styles.leBody}>
+      
       <div className={styles.leMain}>
         <h1>404</h1>
         <p className={styles.textError}>
@@ -16,9 +16,9 @@ function PageError() {
           <p className={styles.textError}>Retouner sur la page d'accueil</p>
         </Link>
       </div>
-
-      <Footer />
-    </div>
+      </div>
+    </Template>
+    
   );
 }
 

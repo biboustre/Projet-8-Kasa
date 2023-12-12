@@ -1,56 +1,27 @@
-import { Link, } from "react-router-dom";
-import styles from "./styles/Accueil.module.css";
-// import Header from "../pages/Header.jsx";
-// import Footer from "../pages/Footer.jsx";
-// import {useParams} from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import styles from "../assets/styles/Accueil.module.css";
+import Template from "../components/Templates/PageTemplate";
+import Banner from "../components/Molecules/Banner";
+import BannerImg from "../assets/images/IMG.jpg";
+import data from "../../fichier.json";
 
 function Accueil() {
   return (
-    <div className={styles.container} >
-      <section className={styles.banniere}>
-        <div className={styles.banniere_img}>
-          <div className={styles.title_banniere}>
-            <p>Chez vous, partout et ailleurs</p>
-          </div>
-        </div>
-      </section>
+    <Template>
+      <Banner src={BannerImg} alt="" slogan="Chez vous, partout et ailleurs" />
 
       <main className={styles.mainAccueil}>
         <section className={styles.gallery}>
-          <div className={styles.location}>
-            <Link to="/locations">
-              <img src="" alt="" />
-            </Link>
-          </div>
-          <div className={styles.location}>
-            <Link to="/locations2">
-              <img src="" alt="" />
-            </Link>
-          </div>
-          <div className={styles.location}>
-            <Link to="/locations3">
-              <img src="" alt="" />
-            </Link>
-          </div>
-          <div className={styles.location}>
-            <Link to="/locations4">
-              <img src="" alt="" />
-            </Link>
-          </div>
-          <div className={styles.location}>
-            <Link to="/locations5">
-              <img src="" alt="" />
-            </Link>
-          </div>
-          <div className={styles.location}>
-            <Link to="/locations6">
-              <img src="" alt="" />
-            </Link>
-          </div>
+          {data.map((item) => (
+            <div key={item.identifiant} className={styles.location}>
+              <Link to={`/appartement/${item.title}`}>
+                <img src={item.cover} alt="" />
+              </Link>
+            </div>
+          ))}
         </section>
       </main>
-    </div>
+    </Template>
   );
 }
 

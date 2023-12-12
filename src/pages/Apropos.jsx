@@ -1,8 +1,8 @@
-// import { Outlet } from "react-router-dom";
-// import Footer from "../pages/Footer.jsx";
-// import Header from "../pages/Header.jsx";
+import Banner from "../components/Molecules/Banner";
 import { useState } from "react";
-import styles from "./styles/Apropos.module.css";
+import styles from "../assets/styles/Apropos.module.css";
+import Template from "../components/Templates/PageTemplate";
+import BannerImg from "../assets/images/IMG-banniere-2.jpg";
 
 
 function Apropos() {
@@ -13,13 +13,10 @@ function Apropos() {
     }
  
 
-
     return (
-        <div className={styles.container} >
-            <section className={styles.banniere2}>
-                <div className={styles.banniere2_img} ></div>
-                <div className={styles.banniere22_img} ></div>
-            </section>
+        <Template>
+            <div className={styles.container} >
+            <Banner src={BannerImg} alt="textAlt" slogan="" />
 
 
             <main>
@@ -71,6 +68,8 @@ function Apropos() {
                 </div>
             </main>
         </div>
+        </Template>
+        
     )
 }
 

@@ -1,6 +1,9 @@
-import styles from "../styles/Locations.module.css";
+import { useParams } from "react-router-dom";
+import styles from "../assets/styles/Locations.module.css";
 
 function Location () {
+    const {id} = useParams();
+
     return(
         <main className={styles.container}>
             <section className={styles.banniere}>
@@ -11,7 +14,7 @@ function Location () {
             <section className={styles.infosLogements}>
                <section>
                     <div className={styles.nameAddressLogement}>
-                        <h1 className={styles.title}>Ceci est un titre test </h1>
+                        <h1 className={styles.title}> {`${id}`} </h1>
                         <h2>Sous titre</h2>
                     </div>
                    
@@ -38,8 +41,6 @@ function Location () {
                </section>
             </section>
         </main>
-            
-    
     ) 
 
 }
