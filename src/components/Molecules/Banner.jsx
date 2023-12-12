@@ -1,8 +1,10 @@
+import styles from "../../assets/styles/Banner.module.css";
+
 const Banner = ({src, alt, slogan}) => {
     return (
-        <div className="banner">
+        <div className={styles.banner}>
             <img src={src} alt={alt} />
-            <p className="bannerText">{slogan}</p>
+            <p className={styles.bannerText}>{slogan}</p>
         </div>
     )
 }

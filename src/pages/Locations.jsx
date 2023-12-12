@@ -1,15 +1,20 @@
 import { useParams } from "react-router-dom";
 import styles from "../assets/styles/Locations.module.css";
+import data from "../../fichier.json";
+import Template from "../components/Templates/PageTemplate";
+
 
 function Location () {
     const {id} = useParams();
 
     return(
+        <Template>
         <main className={styles.container}>
             <section className={styles.banniere}>
-                {/* <img src={IMG} alt="" /> cest un test qui fonctionne!!!!!!!!!!!!! */}
-                <p></p>
-                <p></p>
+                {data.map((item) => (
+                     <img src={`${item.cover}`} alt="" />
+                ))}
+               
             </section>
             <section className={styles.infosLogements}>
                <section>
@@ -41,8 +46,8 @@ function Location () {
                </section>
             </section>
         </main>
+        </Template>
     ) 
-
 }
 
 
