@@ -28,12 +28,14 @@ function Apropos() {
             <main className={styles.container}>
                 {categories.map((item) => (
                     <div className={styles.btnsBarre} key={item.id}>
+
                         <div  className={styles.rideauDeroulant}>
                             <p className={styles.categories}>{item.name}</p>
                             <button onClick={handlClick}>
-                                <img src={ArrowImg} alt="Flêche qui ouvre la déscription" />
+                                <img className={styles.arrow} src={ArrowImg} alt="Flêche qui ouvre la déscription" />
                             </button>
                         </div>
+
                         {open && (<aside   className={styles.textHidden}>
                             <p>{item.description}</p>
                         </aside>)} 

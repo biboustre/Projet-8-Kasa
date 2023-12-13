@@ -58,27 +58,11 @@
 
 /* Media queries RESPONSIVE */
   @media screen and (max-width: 944px) {
-    /* BANNER */
-    .banniere{
-      padding: 0 19px;
-      margin: 0;
-    }
-    
-    .banniere_img{
-      background-size: cover;
-      background-position: center;
-      height: 111px;
-      border-radius: 10px;
-    }
   
-    .title_banniere{
-      height: 111px;
-      border-radius: 10px;
-    }
   
-    main{
+    /* main{
       padding-top: 30px;
-    }
+    } */
     
     
     
@@ -96,10 +80,10 @@
   
   
   
-  @media screen and (max-width: 954px){
+  /* @media screen and (max-width: 954px){
     .title_banniere > p {
       position: relative;
       width: 250px;
       font-size: 26px;
     }
-  }
+  } */

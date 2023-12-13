@@ -9,7 +9,7 @@ const Template = ({
     return (
         <div className={styles.body}>
             <Header />
-            <main className="main">
+            <main className="mainTemplate">
                 {children}
             </main>
             <Footer />

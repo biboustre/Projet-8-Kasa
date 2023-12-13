@@ -13,12 +13,43 @@
 
 
 .banniere{
+    position: relative;
     max-width: 1440px;
     /* padding: 0 100px; */
     /* width: 86%; */
     height: 415px;
     background-color: darkslategrey;
     margin: auto;
+}
+
+
+.slide{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.btnLeft{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 72.2px;
+    width: 46.68px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btnRight{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(180deg);
+    height: 72.2px;
+    width: 46.68px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 
