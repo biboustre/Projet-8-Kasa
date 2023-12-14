@@ -12,11 +12,11 @@ function Location () {
         <Template>
             <main className={styles.container}>
                 <section className={styles.banniere}>
-                    {data.map((slide) =>(
-                        <div className={styles.slide} key={slide.identifiant}>
-                            <img src={slide["des photos"]} alt="" />
+                
+                        <div className={styles.slide} >
+                            <img src="" alt="" />
                         </div>
-                    ))}
+                    
                     <button className={styles.btnLeft}>
                         <img  src={Arrow} alt="" />
                     </button> 
