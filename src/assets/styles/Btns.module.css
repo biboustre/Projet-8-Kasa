@@ -1,8 +1,4 @@
-.btnsBarre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .rideauDeroulant{
     display: flex;
@@ -29,8 +25,15 @@
 }
 
 
+.arrow{
+    width: 13.71px;
+    height: 24px;
+    transform: rotate(90deg);
+}
+
+
 aside{
-    width: 82.5%;
+    /* width: auto; */
     background: rgba(246, 246, 246, 1);
     padding: 20px;
 

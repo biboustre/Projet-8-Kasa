@@ -1,20 +1,30 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import styles from "../assets/styles/Locations.module.css";
 import data from "../../fichier.json";
 import Template from "../components/Templates/PageTemplate";
 import Arrow from "../assets/images/arrow.png";
+import Btns from "../components/Atoms/Btns";
+
 
 
 function Location () {
     const {id} = useParams();
 
+    const item = data.find((appartement) => appartement.id === id);
+    if (item === undefined) {
+        return (
+            <Navigate to="/404" />
+            ) 
+    }
+
     return(
         <Template>
-            <main className={styles.container}>
+                  
+            <main key={item.id} className={styles.container}>
                 <section className={styles.banniere}>
                 
                         <div className={styles.slide} >
-                            <img src="" alt="" />
+                            <img src={item.cover} alt="" />
                         </div>
                     
                     <button className={styles.btnLeft}>
@@ -23,38 +33,41 @@ function Location () {
                     <button className={styles.btnRight}>
                         <img  src={Arrow} alt="" />
                     </button> 
-                   
                 </section>
+
                 <section className={styles.infosLogements}>
                    <section>
                         <div className={styles.nameAddressLogement}>
-                            <h1 className={styles.title}> {`${id}`} </h1>
-                            <h2>Sous titre</h2>
+                            <h1 className={styles.title}>{item.title}</h1>
+                            <h2>{item.location}</h2>
                         </div>
                     
                         <div className={styles.infos}>
-                            <div>Test</div>
-                            <div>Test</div>
-                            <div>Test</div>
-                        </div>
-                        <div>
-                            <p>Description</p>
-                            <button></button>
+                            <div className={styles.childInfos} key={item.index}> <p>{item["tags"]}</p> </div>
+                            <div className={styles.childInfos} key={item.index}> <p>{item["tags"]}</p> </div>
+                            <div className={styles.childInfos} key={item.index}> <p>{item["tags"]}</p> </div>
                         </div>
                    </section>
-                   <section>
+                   <section className={styles.infoLogementRight}>
                         <div className={styles.identite}>
                             <div className={styles.nomPrenom}>
-                                <h2 className={styles.prenom}>Cacao</h2>
-                                <h2 className={styles.nom}>Cacaocacao</h2>
+                                <h2 className={styles.nom}>{item.host.name}</h2>
                             </div>
-                            <img className={styles.imgProfil} src="images/IMG.jpg" alt="" />
+                            <img className={styles.imgProfil} src={item.host.picture} alt="" />
                         </div>
-                        <div></div>
-                        <div></div>
+                        <div>note</div>
                    </section>
                 </section>
+                        <section className={styles.btns}>
+                            <div className={styles.btn1}>
+                                <Btns name="Déscription" text={item.description} />
+                            </div>
+                            <div className={styles.btn2}>
+                                <Btns className={styles.btn22} name="Equipement" text={item.equipments}/>
+                            </div>
+                        </section>
             </main>
+            
         </Template>
     ) 
 }

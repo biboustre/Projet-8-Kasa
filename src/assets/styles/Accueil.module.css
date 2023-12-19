@@ -8,29 +8,29 @@
 
 
 
-  main{
-    /* max-width: 1440px;
-    margin: auto;
-    padding: 0 100px; */
-  }
 
-
-/* **** Banniere *****/
-
+a{
+  text-decoration: none;
+  color: black;
+}
   
   
   
   
   /******** main ********/
   .mainAccueil{
-    padding: 50px 40px;
+    max-width: 1440px;
+    padding: 0 100px;
     margin-top: 40px;
-    border-radius: 25px;
-    background: rgba(246, 246, 246, 1);
+    margin-left: auto;
+    margin-right: auto;
   }
   
   
   .gallery{
+    border-radius: 25px;
+    background: rgba(246, 246, 246, 1);
+    padding: 50px 0 40px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -67,7 +67,7 @@
     
     
     /* GALLERY */
-    .mainAccueil{
+    .gallery{
       background-color: white;
       margin: auto;
     }

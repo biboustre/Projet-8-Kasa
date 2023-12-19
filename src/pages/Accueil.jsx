@@ -6,6 +6,7 @@ import BannerImg from "../assets/images/IMG.jpg";
 import data from "../../fichier.json";
 
 function Accueil() {
+
   return (
     <Template>
       <Banner src={BannerImg} alt="" slogan="Chez vous, partout et ailleurs" />
@@ -13,9 +14,10 @@ function Accueil() {
       <main className={styles.mainAccueil}>
         <section className={styles.gallery}>
           {data.map((item) => (
-            <div key={item.identifiant} className={styles.location}>
-              <Link to={`/appartement/${item.title}`}>
+            <div key={item.id} className={styles.location}>
+              <Link to={`/appartement/${item.id}`}>
                 <img src={item.cover} alt="" />
+                <p>{`${item.title}`}</p>
               </Link>
             </div>
           ))}
@@ -26,3 +28,4 @@ function Accueil() {
 }
 
 export default Accueil;
+

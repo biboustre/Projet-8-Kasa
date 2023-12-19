@@ -7,15 +7,18 @@
 
 .container{
     max-width: 1440px;
-    margin: auto;
+    /* margin: auto; */
     padding: 0 100px;
-}
-
-.btnsBarre{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* .btnsBarre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
 
 .rideauDeroulant{
     display: flex;

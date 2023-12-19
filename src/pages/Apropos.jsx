@@ -4,6 +4,7 @@ import styles from "../assets/styles/Apropos.module.css";
 import Template from "../components/Templates/PageTemplate";
 import BannerImg from "../assets/images/IMG-banniere-2.jpg";
 import ArrowImg from "../assets/images/arrow.png";
+import Btns from "../components/Atoms/Btns";
 
 
 function Apropos() {
@@ -14,11 +15,7 @@ function Apropos() {
         { id: 4, name: "Sécurité", description: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."}
     ]);
 
-    const [open, setOpen] = useState(false)
 
-    const handlClick = () => {
-       setOpen(!open)
-    }
  
 
     return (
@@ -27,56 +24,10 @@ function Apropos() {
             <Banner src={BannerImg} alt="textAlt" slogan="" />
             <main className={styles.container}>
                 {categories.map((item) => (
-                    <div className={styles.btnsBarre} key={item.id}>
-
-                        <div  className={styles.rideauDeroulant}>
-                            <p className={styles.categories}>{item.name}</p>
-                            <button onClick={handlClick}>
-                                <img className={styles.arrow} src={ArrowImg} alt="Flêche qui ouvre la déscription" />
-                            </button>
-                        </div>
-
-                        {open && (<aside   className={styles.textHidden}>
-                            <p>{item.description}</p>
-                        </aside>)} 
-                    </div>
+                    <Btns key={categories.id} name={item.name}  text={item.description}/>
+                   
                 ))}
                 
-
-                {/* <div>
-                    <div className={styles.rideauDeroulant}>
-                        <p className={styles.categories}>Respect</p>
-                        <button onClick={handlClick}>
-                            <img src="images/arrow.png" alt="Flêche pour ouvrire " />
-                        </button>
-                    </div>
-                    {open && (<aside   className={styles.textHidden} >
-                        <p>La bienvéllence fait partie des valeurs fondatrices de Kasa. Toutes pertubation du voisinage entraînera une exclusion de notre plateforme.</p>
-                    </aside>)}
-                </div>
-                <div>
-                    <div className={styles.rideauDeroulant}>
-                        <p className={styles.categories}>Service</p>
-                        <button onClick={handlClick}>
-                            <img src="images/arrow.png" alt="Flêche pour ouvrire " />
-                        </button>
-                    </div>
-                    {open && (<aside   className={styles.textHidden} >
-                        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
-                    </aside>)}
-                </div>
-                <div>
-                    <div className={styles.rideauDeroulant}>
-                        <p className={styles.categories}>Sécurité</p>
-                        <button onClick={handlClick}>
-                            <img src="images/arrow.png" alt="Flêche pour ouvrire " />
-                        </button>
-                    </div>
-                    
-                    {open && (<aside>
-                        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
-                    </aside>)}
-                </div> */}
             </main>
         
         </Template>
