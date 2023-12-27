@@ -78,7 +78,7 @@ h2{
 .childInfos{
     display: flex;
     align-items: center;
-    height: 25px;
+    height: auto;
     padding: 0 10px;
     border-radius: 10px;
     background: rgba(255, 96, 96, 1);
@@ -116,6 +116,23 @@ h2{
     height: 50px;
     border-radius: 50%;
 }
+
+
+
+.star > ul{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.star > ul > li{
+    width: 24.75px;
+    height: 24px;
+}
+
+
+
 
 
 .btns{

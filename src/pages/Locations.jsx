@@ -5,6 +5,8 @@ import Template from "../components/Templates/PageTemplate";
 import Arrow from "../assets/images/arrow.png";
 import Btns from "../components/Atoms/Btns";
 import { useState } from "react";
+import star from "../assets/images/VectorGris.png";
+import starFull from "../assets/images/VectorFull.png";
 
 
 function Location () {
@@ -30,6 +32,17 @@ function Location () {
         setSlide(newImage);
     };
 
+    const etoile = 5;
+    const etoileFull = item.rating;
+    const etoiles = [];
+
+    for (let i = 0; i < etoileFull; i++) {
+        etoiles.push(<li key={i}><img src={starFull} alt="" /></li>)
+    }
+
+    for (let i = etoileFull; i < etoile; i++) {
+            etoiles.push(<li><img src={star} alt="" /></li>)
+    }
     
     return(
         <Template>
@@ -38,7 +51,7 @@ function Location () {
                 <section className={styles.banniere}>
                 
                         <div className={styles.carousel} >
-                            <img src={imagesCarousel[slide]} alt={`slide ${slide + 1}`} />
+                            <img src={imagesCarousel[slide]} alt="" />
                         </div>
                     
                     <button onClick={slidePrecedent} className={styles.btnLeft}>
@@ -69,7 +82,11 @@ function Location () {
                             </div>
                             <img className={styles.imgProfil} src={item.host.picture} alt="" />
                         </div>
-                        <div>note</div>
+                        <div className={styles.star}>
+                            <ul>
+                                {etoiles}
+                            </ul>
+                        </div>
                    </section>
                 </section>
                         <section className={styles.btns}>
