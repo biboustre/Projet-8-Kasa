@@ -24,7 +24,7 @@
 }
 
 
-.slide{
+.carousel{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -121,6 +121,7 @@ h2{
 .btns{
     display: flex;
     gap: 76px;
+    margin-top: 25px;
 }
 
 

@@ -15,7 +15,7 @@ function Btns({name, text}) {
 
     return (
         
-             <>
+            <div className={styles.btncomplet}>
                 <div  className={styles.rideauDeroulant}>
                     <p className={styles.categories}>{name}</p>
                     <button onClick={handlClick}>
@@ -25,7 +25,7 @@ function Btns({name, text}) {
                 {open && (<aside   className={styles.textHidden}>
                     <p>{text}</p>
                 </aside>)}
-            </>
+            </div>
 
                 )}
 

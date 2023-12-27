@@ -3,7 +3,6 @@ import { useState } from "react";
 import styles from "../assets/styles/Apropos.module.css";
 import Template from "../components/Templates/PageTemplate";
 import BannerImg from "../assets/images/IMG-banniere-2.jpg";
-import ArrowImg from "../assets/images/arrow.png";
 import Btns from "../components/Atoms/Btns";
 
 
@@ -24,7 +23,7 @@ function Apropos() {
             <Banner src={BannerImg} alt="textAlt" slogan="" />
             <main className={styles.container}>
                 {categories.map((item) => (
-                    <Btns key={categories.id} name={item.name}  text={item.description}/>
+                    <Btns className={styles.button} key={categories.id} name={item.name}  text={item.description}/>
                    
                 ))}
                 

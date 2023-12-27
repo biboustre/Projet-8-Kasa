@@ -1,12 +1,15 @@
-
+.btncomplet{
+    width: 82.5%;
+}
 
 .rideauDeroulant{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px 0 auto;
+    /* margin: 0 0 auto; */
+    margin-bottom: auto;
     height: 52px;
-    width: 82.5%;
+    /* width: 100%; */
     border-radius: 5px;
     background: rgba(255, 96, 96, 1);
 }
@@ -33,7 +36,7 @@
 
 
 aside{
-    /* width: auto; */
+    width: auto;
     background: rgba(246, 246, 246, 1);
     padding: 20px;
 

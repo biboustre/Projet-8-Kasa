@@ -4,7 +4,7 @@ import data from "../../fichier.json";
 import Template from "../components/Templates/PageTemplate";
 import Arrow from "../assets/images/arrow.png";
 import Btns from "../components/Atoms/Btns";
-
+import { useState } from "react";
 
 
 function Location () {
@@ -17,20 +17,34 @@ function Location () {
             ) 
     }
 
+    const imagesCarousel = item.pictures;
+    const [slide, setSlide] = useState(0);
+
+    const slideSuivant = () => {
+        const newImage = (slide + 1) % imagesCarousel.length;
+        setSlide(newImage);
+    };
+
+    const slidePrecedent = () => {
+        const newImage = (slide - 1 + imagesCarousel.length) % imagesCarousel.length;
+        setSlide(newImage);
+    };
+
+    
     return(
         <Template>
                   
             <main key={item.id} className={styles.container}>
                 <section className={styles.banniere}>
                 
-                        <div className={styles.slide} >
-                            <img src={item.cover} alt="" />
+                        <div className={styles.carousel} >
+                            <img src={imagesCarousel[slide]} alt={`slide ${slide + 1}`} />
                         </div>
                     
-                    <button className={styles.btnLeft}>
+                    <button onClick={slidePrecedent} className={styles.btnLeft}>
                         <img  src={Arrow} alt="" />
                     </button> 
-                    <button className={styles.btnRight}>
+                    <button onClick={slideSuivant} className={styles.btnRight}>
                         <img  src={Arrow} alt="" />
                     </button> 
                 </section>
