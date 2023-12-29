@@ -19,18 +19,13 @@ function Apropos() {
 
     return (
         <Template>
-            
             <Banner src={BannerImg} alt="textAlt" slogan="" />
             <main className={styles.container}>
                 {categories.map((item) => (
                     <Btns className={styles.button} key={categories.id} name={item.name}  text={item.description}/>
-                   
                 ))}
-                
             </main>
-        
         </Template>
-        
     )
 }
 
