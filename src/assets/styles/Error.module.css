@@ -1,21 +1,34 @@
+
+
+
 h1{
+    height: 263px;
+    width: 597px;
     font-size: 288px;
     color: rgba(255, 96, 96, 1);
 }
 
 
+.textError1{
+    color: rgba(255, 96, 96, 1);
+    font-weight: 500;
+    font-size: 36px;
+}
+
 .textError{
     color: rgba(255, 96, 96, 1);
 }
 
+.textError:hover{
+    text-decoration: underline;
+}
 .leMain{
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 100px;
 }
 
-.leBody{
-    height: 100vh;
-}
 
 

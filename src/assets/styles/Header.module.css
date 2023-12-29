@@ -2,8 +2,9 @@ header{
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
-    margin: auto;
+    margin: 0  auto;
     padding: 50px 100px;
+    width: 100%;
   }
   
   nav{

@@ -17,34 +17,10 @@
 }
 
 
- /* .btnsBarre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}  */
-
 .rideauDeroulant{
    margin-top: 30px;
 } 
 
- /* .categories{
-    margin-left: 20px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 24px;
-}
-
-.arrow{
-    width: 13.71px;
-    height: 24px;
-    transform: rotate(90deg);
-}
-
- .rideauDeroulant > button{
-    border: none;
-    background-color: rgba(255, 96, 96, 1);
-    margin-right: 20px;
-    cursor: pointer;
-} */
 
 .button{
     margin-top: 30px;

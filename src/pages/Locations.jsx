@@ -70,9 +70,9 @@ function Location () {
                         </div>
                     
                         <div className={styles.infos}>
-                            <div className={styles.childInfos} key={item.index}> <p>{item["tags"]}</p> </div>
-                            <div className={styles.childInfos} key={item.index}> <p>{item["tags"]}</p> </div>
-                            <div className={styles.childInfos} key={item.index}> <p>{item["tags"]}</p> </div>
+                            {item.tags.map((tag) => (
+                            <div className={styles.childInfos} key={item.id}> <p>{tag}</p> </div>
+                            ))}
                         </div>
                    </section>
                    <section className={styles.infoLogementRight}>

@@ -16,7 +16,7 @@ function Accueil() {
           {data.map((item) => (
             <div key={item.id} className={styles.location}>
               <Link to={`/appartement/${item.id}`}>
-                <img src={item.cover} alt="" />
+                <img className={styles.imgCover} src={item.cover} alt="" />
                 <p>{`${item.title}`}</p>
               </Link>
             </div>

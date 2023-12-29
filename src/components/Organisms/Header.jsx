@@ -12,7 +12,6 @@ function Header() {
       <header>
         <Logo />
         <Navigation />
-        
       </header>
   
   );

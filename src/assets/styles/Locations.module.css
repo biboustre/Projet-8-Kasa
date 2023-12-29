@@ -16,11 +16,12 @@
 .banniere{
     position: relative;
     max-width: 1440px;
-    /* padding: 0 100px; */
-    /* width: 86%; */
+    /* padding: 0 100px;
+    width: 86%; */
     height: 415px;
     background-color: darkslategrey;
     margin: auto;
+    border-radius: 25px;
 }
 
 
@@ -28,14 +29,21 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    /* border-radius: 10px; */
+}
+
+.carousel > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
 }
 
 .btnLeft{
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 50%;
-    height: 72.2px;
-    width: 46.68px;
+    /* height: 72.2px; */
+    /* width: 46.68px; */
     border: none;
     background: none;
     cursor: pointer;
@@ -43,11 +51,11 @@
 
 .btnRight{
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 50%;
     transform: rotate(180deg);
-    height: 72.2px;
-    width: 46.68px;
+    /* height: 72.2px;
+    width: 46.68px; */
     border: none;
     background: none;
     cursor: pointer;
@@ -79,6 +87,7 @@ h2{
     display: flex;
     align-items: center;
     height: auto;
+    min-height: 30px;
     padding: 0 10px;
     border-radius: 10px;
     background: rgba(255, 96, 96, 1);
@@ -118,7 +127,6 @@ h2{
 }
 
 
-
 .star > ul{
     display: flex;
     justify-content: end;
@@ -130,10 +138,6 @@ h2{
     width: 24.75px;
     height: 24px;
 }
-
-
-
-
 
 .btns{
     display: flex;
@@ -153,3 +157,60 @@ h2{
 }
 
 
+
+@media screen and (max-width: 1050px) {
+    .container{ 
+      padding: 0 30px;
+    }
+
+    .infos{
+        flex-wrap: wrap;
+    }
+
+    .infosLogements{
+        flex-direction: column;
+    }
+
+    .infoLogementRight{
+        flex-direction: row-reverse;
+        margin-top: 25px;
+        justify-content: space-between;
+        width: 100%;
+        /* justify-content: baseline; */
+        /* align-items: start; */
+    }
+
+    .identite{
+        padding: 0;
+    }
+
+    .btns{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .btn2, .btn1{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .identite, .star{
+        display: flex;
+        align-items: center;
+    }
+
+    .btnLeft > img, .btnRight > img{
+       height: 19.8px;
+       width: 11.67px;
+    }
+
+    .btnLeft{
+        left: 10px;
+    }
+    .btnRight{
+        right: 10px;
+    }
+}

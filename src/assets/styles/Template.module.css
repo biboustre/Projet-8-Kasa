@@ -1,8 +1,16 @@
 
-.body{
+/* .body{ */
   /* max-width: 1440px; */
   /* padding: 0 100px; */
-  margin: auto;
+  /* margin: auto; */
+/* } */
+
+body, .body{
+  /* height: auto; */
+  /* min-height: 100vh; */
+  /* display: flex;
+  flex-direction: column; */
 }
+
 
 
