@@ -7,12 +7,12 @@ function PageError() {
     <Template>
       {/* <div className={styles.leBody}> */}
         <div className={styles.leMain}>
-          <h1>404</h1>
-          <p className={styles.textError1}>
-            Oups! La page que vous demandez nexiste pas.
-          </p>
+          <h1 className={styles.title404}>404</h1>
+          <div className={styles.textError1}>
+            <p>Oups! La page que </p> <p> vous demandez nexiste pas.</p>
+          </div>
           <Link to="/" className={styles.liens_globale}>
-            <p className={styles.textError}>Retouner sur la page d'accueil</p>
+            <p className={styles.textError2}>Retouner sur la page d'accueil</p>
           </Link>
         </div>
       {/* </div> */}

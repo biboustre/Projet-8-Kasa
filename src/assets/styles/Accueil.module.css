@@ -77,6 +77,12 @@ a{
       height: 255px;
     }
   }
+
+  @media screen and (max-width: 540px) {
+    .mainAccueil{
+      padding: 0 30px;
+    }
+  }
   
   
   

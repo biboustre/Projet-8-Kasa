@@ -5,8 +5,9 @@
   /* margin: auto; */
 /* } */
 
-body, .body{
-  /* height: auto; */
+.body{
+  /* padding: 40px 100px 0; */
+  /* height: 100vh; */
   /* min-height: 100vh; */
   /* display: flex;
   flex-direction: column; */

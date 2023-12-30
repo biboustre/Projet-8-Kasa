@@ -1,9 +1,6 @@
-
-
-
-h1{
-    height: 263px;
-    width: 597px;
+.title404{
+    /* height: auto;
+    width: 597px; */
     font-size: 288px;
     color: rgba(255, 96, 96, 1);
 }
@@ -12,14 +9,19 @@ h1{
 .textError1{
     color: rgba(255, 96, 96, 1);
     font-weight: 500;
-    font-size: 36px;
+    font-size: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-.textError{
+.textError2{
     color: rgba(255, 96, 96, 1);
+    margin-bottom: 40px;
 }
 
-.textError:hover{
+.textError2:hover{
     text-decoration: underline;
 }
 .leMain{
@@ -28,7 +30,21 @@ h1{
     flex-direction: column;
     align-items: center;
     gap: 100px;
+    padding: 0 50px;
 }
 
+
+@media screen and (max-width: 780px) {
+    .title404{
+        font-size: 96px;
+        margin-top: 50px;
+    }
+
+    .textError1{
+        font-size: 18px;
+    }
+    
+
+}
 
 

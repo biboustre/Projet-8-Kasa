@@ -16,10 +16,7 @@
 .banniere{
     position: relative;
     max-width: 1440px;
-    /* padding: 0 100px;
-    width: 86%; */
     height: 415px;
-    background-color: darkslategrey;
     margin: auto;
     border-radius: 25px;
 }
@@ -29,21 +26,32 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    /* border-radius: 10px; */
 }
 
 .carousel > img{
     height: 100%;
     width: 100%;
     border-radius: 25px;
+    
+}
+
+.nbImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    font-weight: 700;
 }
 
 .btnLeft{
     position: absolute;
     left: 20px;
     top: 50%;
-    /* height: 72.2px; */
-    /* width: 46.68px; */
     border: none;
     background: none;
     cursor: pointer;
@@ -54,17 +62,16 @@
     right: 20px;
     top: 50%;
     transform: rotate(180deg);
-    /* height: 72.2px;
-    width: 46.68px; */
     border: none;
     background: none;
     cursor: pointer;
 }
 
 
-.title{
+.titleLoc{
     font-size: 36px;
     font-weight: 500;
+    color: rgba(255, 96, 96, 1);
 }
 
 h2{
@@ -176,8 +183,6 @@ h2{
         margin-top: 25px;
         justify-content: space-between;
         width: 100%;
-        /* justify-content: baseline; */
-        /* align-items: start; */
     }
 
     .identite{

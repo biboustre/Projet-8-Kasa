@@ -44,16 +44,18 @@ function Location () {
             etoiles.push(<li><img src={star} alt="" /></li>)
     }
     
+    const nbrPictures = item.pictures.length;
+
+
     return(
         <Template>
                   
             <main key={item.id} className={styles.container}>
                 <section className={styles.banniere}>
-                
-                        <div className={styles.carousel} >
-                            <img src={imagesCarousel[slide]} alt="" />
-                        </div>
-                    
+                    <div  className={styles.carousel} >
+                        <img  src={imagesCarousel[slide]} alt="" />
+                    </div>
+                    <p className={styles.nbImg}>{slide + 1}/{nbrPictures}</p>
                     <button onClick={slidePrecedent} className={styles.btnLeft}>
                         <img  src={Arrow} alt="" />
                     </button> 
@@ -65,7 +67,7 @@ function Location () {
                 <section className={styles.infosLogements}>
                    <section>
                         <div className={styles.nameAddressLogement}>
-                            <h1 className={styles.title}>{item.title}</h1>
+                            <h1 className={styles.titleLoc}>{item.title}</h1>
                             <h2>{item.location}</h2>
                         </div>
                     
