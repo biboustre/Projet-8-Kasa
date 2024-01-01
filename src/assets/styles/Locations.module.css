@@ -12,7 +12,7 @@
     margin-bottom: 40px;
 }
 
-
+/* Carousel */
 .banniere{
     position: relative;
     max-width: 1440px;
@@ -32,7 +32,6 @@
     height: 100%;
     width: 100%;
     border-radius: 25px;
-    
 }
 
 .nbImg{
@@ -67,7 +66,7 @@
     cursor: pointer;
 }
 
-
+/* Infos logement */
 .titleLoc{
     font-size: 36px;
     font-weight: 500;
@@ -141,17 +140,12 @@ h2{
     list-style-type: none;
 }
 
-.star > ul > li{
-    width: 24.75px;
-    height: 24px;
-}
-
+/* Buttons */
 .btns{
     display: flex;
     gap: 76px;
     margin-top: 25px;
 }
-
 
 .btn1{
     width: 82.5%;
@@ -163,8 +157,7 @@ h2{
     width: 82.5%;
 }
 
-
-
+/* Medias queries */
 @media screen and (max-width: 1050px) {
     .container{ 
       padding: 0 30px;
@@ -217,5 +210,16 @@ h2{
     }
     .btnRight{
         right: 10px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .nom{
+        font-size: 12px;
+    }
+
+    .imgProfil{
+        height: 32px;
+        width: 32px;
     }
 }

@@ -1,12 +1,12 @@
 import { Navigate, useParams } from "react-router-dom";
 import styles from "../assets/styles/Locations.module.css";
-import data from "../../fichier.json";
 import Template from "../components/Templates/PageTemplate";
 import Arrow from "../assets/images/arrow.png";
 import Btns from "../components/Atoms/Btns";
 import { useState } from "react";
 import star from "../assets/images/VectorGris.png";
 import starFull from "../assets/images/VectorFull.png";
+import data from "../../fichier.json";
 
 
 function Location () {
@@ -41,7 +41,7 @@ function Location () {
     }
 
     for (let i = etoileFull; i < etoile; i++) {
-            etoiles.push(<li><img src={star} alt="" /></li>)
+            etoiles.push(<li className={styles.etoiles}><img src={star} alt="" /></li>)
     }
     
     const nbrPictures = item.pictures.length;

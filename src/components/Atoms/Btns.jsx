@@ -2,10 +2,6 @@ import ArrowImg from "../../assets/images/arrow.png";
 import styles from "../../assets/styles/Btns.module.css";
 import { useState } from "react";
 
-
-
-
-
 function Btns({name, text}) {
     const [open, setOpen] = useState(false)
 
@@ -19,14 +15,14 @@ function Btns({name, text}) {
                 <div  className={styles.rideauDeroulant}>
                     <p className={styles.categories}>{name}</p>
                     <button onClick={handlClick}>
-                        <img className={styles.arrow} src={ArrowImg} alt="Flêche qui ouvre la déscription" />
+                        <img className={`${styles.arrow} ${open && styles.arrowOpen}`} src={ArrowImg}  alt="Flêche qui ouvre la déscription" />
                     </button>
                 </div>
-                {open && (<aside   className={styles.textHidden}>
+                {open && (<aside className={styles.textHidden}>
                     <p>{text}</p>
                 </aside>)}
             </div>
 
-                )}
+            )}
 
 export default Btns
