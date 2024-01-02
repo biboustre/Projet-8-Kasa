@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Accueil from "../pages/Accueil";
-import Apropos from "../pages/Apropos";
-import PageError from "../pages/Error";
-import Location from "../pages/Locations";
+import Accueil from "../pages/Accueil/Accueil";
+import Apropos from "../pages/Apropos/Apropos";
+import PageError from "../pages/Error/Error";
+import Location from "../pages/Logements/Locations";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

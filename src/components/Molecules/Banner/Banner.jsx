@@ -1,4 +1,4 @@
-import styles from "../../assets/styles/Banner.module.css";
+import styles from "../Banner/Banner.module.css";
 
 const Banner = ({src, alt, slogan}) => {
     return (

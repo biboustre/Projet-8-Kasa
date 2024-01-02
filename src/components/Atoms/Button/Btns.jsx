@@ -1,5 +1,5 @@
-import ArrowImg from "../../assets/images/arrow.png";
-import styles from "../../assets/styles/Btns.module.css";
+import ArrowImg from "../../../assets/images/arrow.png";
+import styles from "../../Atoms/Button/Btns.module.css";
 import { useState } from "react";
 
 function Btns({name, text}) {

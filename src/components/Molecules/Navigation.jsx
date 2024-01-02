@@ -1,4 +1,4 @@
-import NavLink from "../Atoms/NavLink";
+import NavLink from "../Atoms/NavLink/NavLink";
 
 const Navigation = () => {
 

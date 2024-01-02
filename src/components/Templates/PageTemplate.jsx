@@ -1,6 +1,6 @@
-import Footer from "../Organisms/Footer";
-import Header from "../Organisms/Header";
-import styles from "../../assets/styles/Template.module.css";
+import Footer from "../Organisms/Footer/Footer";
+import Header from "../Organisms/Header/Header";
+import styles from "../Templates/Template.module.css";
 
 
 const Template = ({

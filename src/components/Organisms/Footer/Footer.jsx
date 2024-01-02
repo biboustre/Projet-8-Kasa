@@ -1,5 +1,5 @@
-import styles from "../../assets/styles/Footer.module.css";
-import LogoImg from "../../assets/images/logo-kasa.png"
+import styles from "../Footer/Footer.module.css";
+import LogoImg from "../../../assets/images/logo-kasa.png"
 
 
 

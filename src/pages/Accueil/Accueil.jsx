@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import styles from "../assets/styles/Accueil.module.css";
-import Template from "../components/Templates/PageTemplate";
-import Banner from "../components/Molecules/Banner";
-import BannerImg from "../assets/images/IMG.jpg";
-import data from "../../fichier.json";
+import styles from "../../pages/Accueil/Accueil.module.css";
+import Template from "../../components/Templates/PageTemplate";
+import Banner from "../../components/Molecules/Banner/Banner";
+import BannerImg from "../../assets/images/IMG.jpg";
+import data from "../../../fichier.json";
 
 function Accueil() {
 

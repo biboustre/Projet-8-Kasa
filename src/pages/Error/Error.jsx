@@ -1,5 +1,5 @@
-import styles from "../assets/styles/Error.module.css";
-import Template from "../components/Templates/PageTemplate";
+import styles from "../../pages/Error/Error.module.css";
+import Template from "../../components/Templates/PageTemplate";
 import { Link } from "react-router-dom";
 
 function PageError() {
