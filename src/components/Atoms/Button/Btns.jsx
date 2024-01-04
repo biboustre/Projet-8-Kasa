@@ -1,6 +1,8 @@
 import ArrowImg from "../../../assets/images/arrow.png";
 import styles from "../../Atoms/Button/Btns.module.css";
 import { useState } from "react";
+import data from "../../../../fichier.json";
+
 
 function Btns({name, text}) {
     const [open, setOpen] = useState(false)
@@ -19,7 +21,7 @@ function Btns({name, text}) {
                     </button>
                 </div>
                 {open && (<aside className={styles.textHidden}>
-                    <p>{text}</p>
+                    <p key={data.id}>{text}</p>
                 </aside>)}
             </div>
 

@@ -54,7 +54,7 @@ function Location() {
 
   return (
     <Template>
-      <main key={item.id} className={styles.container}>
+      <main className={styles.container}>
         <section className={styles.banniere}>
           <div className={styles.carousel}>
             <img src={imagesCarousel[slide]} alt="" />
@@ -78,8 +78,8 @@ function Location() {
             </div>
 
             <div className={styles.infos}>
-              {item.tags.map((tag) => (
-                <div className={styles.childInfos} key={item.id}>
+              {item.tags.map((tag, index) => (
+                <div className={styles.childInfos} key={index}>
                   {" "}
                   <p>{tag}</p>{" "}
                 </div>
