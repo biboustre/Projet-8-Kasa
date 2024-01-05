@@ -7,7 +7,7 @@ header{
     width: 100%;
   }
   
-  nav{
+   nav{
     display: flex;
     gap: 57px;
     align-items: center;
@@ -21,7 +21,11 @@ header{
   
   .liens_globale:hover{
     text-decoration: underline;
-  }
+  } 
+
+ .activeLink{
+  text-decoration: underline;
+ }
 
 
 

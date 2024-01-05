@@ -17,7 +17,7 @@ function Accueil() {
             <div key={item.id} className={styles.location}>
               <Link to={`/appartement/${item.id}`}>
                 <img className={styles.imgCover} src={item.cover} alt="" />
-                <p>{`${item.title}`}</p>
+                <p>{item.title}</p>
               </Link>
             </div>
           ))}
@@ -28,4 +28,6 @@ function Accueil() {
 }
 
 export default Accueil;
+
+
 

@@ -1,4 +1,5 @@
-import NavLink from "../Atoms/NavLink/NavLink";
+import NavLink from "../../Atoms/NavLink/NavLink";
+import { useState } from "react";
 
 const Navigation = () => {
 

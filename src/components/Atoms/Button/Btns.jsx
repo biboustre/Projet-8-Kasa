@@ -12,19 +12,18 @@ function Btns({name, text}) {
     }
 
     return (
-        
-            <div className={styles.btncomplet}>
-                <div  className={styles.rideauDeroulant}>
-                    <p className={styles.categories}>{name}</p>
-                    <button onClick={handlClick}>
-                        <img className={`${styles.arrow} ${open && styles.arrowOpen}`} src={ArrowImg}  alt="Flêche qui ouvre la déscription" />
-                    </button>
-                </div>
-                {open && (<aside className={styles.textHidden}>
-                    <p key={data.id}>{text}</p>
-                </aside>)}
+        <div className={styles.btncomplet}>
+            <div  className={styles.rideauDeroulant}>
+                <p className={styles.categories}>{name}</p>
+                <button onClick={handlClick}>
+                    <img className={`${styles.arrow} ${open && styles.arrowOpen}`} src={ArrowImg}  alt="Flêche qui ouvre la déscription" />
+                </button>
             </div>
+            {open && (<aside className={styles.textHidden}>
+                <p key={data.id}>{text}</p>
+            </aside>)}
+        </div>
+        )}
 
-            )}
+export default Btns;
 
-export default Btns

@@ -1,13 +1,9 @@
-// import { useState, useEffect } from "react";
 import Logo from "../../Atoms/Logo/Logo";
-import Navigation from "../../Molecules/Navigation";
+import Navigation from "../../Molecules/Navigation/Navigation";
 
 function Header() {
-  // const [checkWidth, setCheckWidth] = useState(window.innerWidth);
 
   return (
-    
-         
       <header>
         <Logo />
         <Navigation />

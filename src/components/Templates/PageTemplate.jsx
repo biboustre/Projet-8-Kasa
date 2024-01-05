@@ -17,12 +17,9 @@ const Template = ({ children }) => {
 }
 
 Template.propTypes = {
-    children: PropTypes.node // Valide que children est de type 'node', acceptant tous les types d'éléments React
+    children: PropTypes.node 
 };
 
 export default Template;
 
 
-// En résumé, ce code définit un composant React  <Template/> qui est la structure de base pour afficher du contenu. 
-// Il inclut <Header/>, un contenu principal pouvant varier (children), et un <Footer/>, en utilisant des composants importés et des styles spécifiques
-//  pour créer une mise en page réutilisable dans le site.

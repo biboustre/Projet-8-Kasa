@@ -1,12 +1,11 @@
 import Banner from "../../components/Molecules/Banner/Banner";
-import { useState } from "react";
 import styles from "../Apropos/Apropos.module.css";
 import Template from "../../components/Templates/PageTemplate";
 import BannerImg from "../../assets/images/IMG-banniere-2.jpg";
 import Btns from "../../components/Atoms/Button/Btns";
 
 function Apropos() {
-  const [categories, setCategories] = useState([
+  const categories = [
     {
       id: 1,
       name: "Fiabilité",
@@ -31,7 +30,7 @@ function Apropos() {
       description:
         "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.",
     },
-  ]);
+  ];
 
   return (
     <Template>
@@ -40,7 +39,7 @@ function Apropos() {
         {categories.map((item) => (
           <Btns
             className={styles.button}
-            key={categories.id}
+            key={item.id}
             name={item.name}
             text={item.description}
           />
@@ -51,3 +50,5 @@ function Apropos() {
 }
 
 export default Apropos;
+
+

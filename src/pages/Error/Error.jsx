@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 function PageError() {
   return (
     <Template>
-      {/* <div className={styles.leBody}> */}
         <div className={styles.leMain}>
           <h1 className={styles.title404}>404</h1>
           <div className={styles.textError1}>
@@ -15,10 +14,11 @@ function PageError() {
             <p className={styles.textError2}>Retouner sur la page d'accueil</p>
           </Link>
         </div>
-      {/* </div> */}
     </Template>
     
   );
 }
 
 export default PageError;
+
+

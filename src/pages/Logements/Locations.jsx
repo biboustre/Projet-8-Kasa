@@ -44,7 +44,7 @@ function Location() {
 
   for (let i = etoileFull; i < etoile; i++) {
     etoiles.push(
-      <li className={styles.etoiles}>
+      <li key={i}  className={styles.etoiles}>
         <img src={star} alt="" />
       </li>
     );
@@ -120,3 +120,6 @@ function Location() {
 }
 
 export default Location;
+
+
+
